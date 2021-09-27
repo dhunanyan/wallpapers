@@ -1,0 +1,159 @@
+.hero {
+  background-color: #f0f2f5;
+  color: #4e5053;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    max-width: 170px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__subtitle {
+    margin: 20px 0 5px 0;
+  }
+
+  &__card {
+    overflow: hidden;
+    margin: 30px 0 0 0;
+    width: 160px;
+    height: 206px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+
+  &__icon {
+    margin: auto;
+    font-size: 32px;
+    border-radius: 50%;
+    background-color: #1877f2;
+    color: #f1f1f1;
+    padding: 10px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__dodaj {
+    padding: 12px;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #1877f2;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+  }
+
+  &__hack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: -1px 2px 5px -2px rgba(0, 0, 0, 0.75);
+    background-color: #fff;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 0 15px 0;
+
+    &::placeholder {
+      font-weight: 500;
+      color: #999;
+      font-size: 18px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #1877f2;
+    font-size: 24px;
+    color: #f1f1f1;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 350ms all ease-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0655f0;
+    }
+  }
+
+  &__line {
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+  }
+
+  &__pamietam {
+    margin: 15px 0 20px 0;
+    color: #1877f2;
+  }
+
+  &__regbutton {
+    margin: 20px 0 5px 0;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #42b72a;
+    border-radius: 5px;
+    padding: 15px 15px;
+    color: #f1f1f1;
+    transition: 350ms all ease-out;
+
+    &:hover {
+      background-color: #209528;
+    }
+  }
+
+  &__info {
+    color: #000;
+    margin: 40px 0 0 0;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__right {
+      margin: 50px auto 0 auto;
+    }
+  }
+}
