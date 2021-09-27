@@ -466,6 +466,11 @@ button {
   font-weight: 700;
 }
 
+.hero__status {
+  margin: 10px 0;
+  color: #c50c0c;
+}
+
 @media (max-width: 768px) {
   .hero__container {
     -webkit-box-orient: vertical;
