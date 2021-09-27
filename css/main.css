@@ -476,6 +476,24 @@ button {
   .hero__right {
     margin: 50px auto 0 auto;
   }
+  .hero__input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .hero__input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .hero__input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .hero__input::placeholder {
+    font-size: 16px;
+  }
+  .hero__button {
+    font-size: 18px;
+  }
+  .hero__regbutton {
+    font-size: 18px;
+  }
 }
 
 .footer {

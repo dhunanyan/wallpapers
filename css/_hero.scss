@@ -155,5 +155,19 @@
     &__right {
       margin: 50px auto 0 auto;
     }
+
+    &__input {
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+
+    &__button {
+      font-size: 18px;
+    }
+
+    &__regbutton {
+      font-size: 18px;
+    }
   }
 }
